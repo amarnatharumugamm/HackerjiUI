@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackerJi</title>
+    <link rel="shortcut icon" href="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacker-ji_Logo_symbole_30RbfYqov.svg"
+        type="image/x-icon" />
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!-- css end -->
+    <!-- Box icons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <!-- Box icons end -->
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .bg-success {
+            background-color: #0bb81f !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #1ED760;
+        }
+
+        p,
+        li {
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .bgImage {
+            position: absolute;
+            right: 0;
+            background-image: url(./assets/img/Mask\ Group\ 3.svg);
+            width: 50vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        #nav {
+            color: white;
+        }
+
+        #nav:hover {
+            color: #1ED760;
+        }
+    </style>
+
+<body>
+ 
+
+    <!-- Navbar starts Here -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark  sticky-lg-top sticky-md-top sticky-sm-top"
+        style="background-color: #000000; padding: 20px;">
+        <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacher-ji_Logo_xdbfgPvxtM.svg" alt="image" width="200px">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 20px;font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Welcome Center</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <li style="list-style: none;" class="nav-item dropdown">
+
+
+
+                        <div class="form-group position-relative error-l-50">
+
+                            <div class="input-group mb-3">
+                                <select class="form-control"
+                                    style="color: #0bb81f;font-size: 20px;background-color:black;border-style: solid;border-color: #0bb81f;font-weight: bold;"
+                                    name="user" id="exampleFormControlSelect1" required>
+                                    <option selected="" disabled="" value="">Select User</option>
+
+                                    <option>one</option>
+                                    <option>two</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </form>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-none d-md-block">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group" style="padding-top: 10px;padding-right: 10px;">
+                    <h4 class='bx bxs-bell' style='color:#ffffff;'></h4>
+                </li>
+                <li class="list-group">
+                    <!-- <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png" alt="user"
+                        width="50px"> -->
+                    <div class="dropdown">
+                        <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png"
+                                alt="user" width="50px">
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="left: -125px;">
+                            <li><a class="dropdown-item" href="#">Nutz - 090607</a></li>
+                            <li><a class="dropdown-item" href="#">Setup your Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Navbar ends Here -->
+
+
+    <div class="container">
+        <div class="row m-5 p-5">
+            <div class="col col-lg-12"
+                style="border-radius: 10px;border-color: #1ED760;border-style: solid;background-color: #ffffff;">
+                <div class="row">
+                    <div class="col col-lg-2 pt-2  my-3 mx-3">
+                        <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png"
+                            width="50%" alt="">
+                    </div>
+                    <div class="col col-lg-6 pt-3">
+                        <h1 style="color: black;">Bug Bounty Program</h1>
+                        <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                            temporibus fugit tenetur perferendis? Necessitatibus, tenetur. Incidunt, autem totam eos
+                            adipisci repudiandae optio soluta modi harum quidem eveniet pariatur officiis rerum!</p>
+                    </div>
+                    <div class="col col-lg-3 pt-3">
+                        <a href="#" class="btn btn-outline-primary"
+                            style="float:right;border-style: solid;border-color: #1ED760;color: #000000;background-color:#1ed760;">Start</a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-lg-3"></div>
+                    <div class="col col-lg-2 pt-2">
+                        <h4 style="color: rgb(73, 73, 73);">Program</h4>
+                        <p style="color: black;font-weight:bold">Bug Bounty</p>
+                    </div>
+                    <div class="col col-lg-2 pt-2">
+                        <h4 style="color:  rgb(73, 73, 73);">Duration</h4>
+                        <p style="color: black;font-weight:bold">2 weeks</p>
+                    </div>
+                    <div class="col col-lg-2 pt-2">
+                        <h4 style="color:  rgb(73, 73, 73);">Rewards</h4>
+                        <p style="color: black;font-weight:bold">Monetary (Capped)</p>
+                    </div>
+                    <div class="col col-lg-3"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-8">
+                    <ul style="list-style-type: none;">
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Terms
+                                &
+                                Conditions</a>
+                        </li>
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;"
+                                href="">Privacy-Policy</a>
+                        </li>
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;"
+                                href="">Hackerji
+                                Security</a>
+                        </li>
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Do not
+                                Sell
+                                my
+                                Information</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-lg-4">
+                    <ul style="list-style-type: none; margin-left: 1rem;">
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Docs</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">FAQ</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Resources</a></li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Blog</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5 pb-5">
+                <div class="col col-lg-12">
+                    <ul style="list-style-type: none; margin-left: 1rem;">
+                        <li style="text-align: center;"><a
+                                style="color: #ffffff !important; margin-right: 1rem;font-size: 12px;" href="">Copyright
+                                @ 2021 HaackerJi.All rights reserved.</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
