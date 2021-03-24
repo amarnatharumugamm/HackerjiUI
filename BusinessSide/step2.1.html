@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerJi | BugBounty Step 2</title>
+    <link rel="shortcut icon" href="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacker-ji_Logo_symbole_30RbfYqov.svg"
+        type="image/x-icon">
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- css end -->
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <!-- Box icons end -->
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .bg-success {
+            background-color: #0bb81f !important;
+        }
+
+        #addbutton {
+            font-weight: bold;
+            border-color: #08ff31;
+            border-style: solid;
+            padding: 8px;
+            text-decoration: none;
+            color: white;
+            transition: scale(1.2);
+
+        }
+
+        #addbutton:hover {
+            background-color: #00ff1e;
+            color: black;
+
+        }
+    </style>
+
+    <style>
+        /* The container */
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .container input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar starts Here -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark  sticky-lg-top sticky-md-top sticky-sm-top"
+        style="background-color: #000000; padding: 20px;">
+        <div class="container-fluid">
+            <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacher-ji_Logo_xdbfgPvxtM.svg" alt="image"
+                width="200px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-none d-md-block">
+
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group" style="padding-top: 10px;padding-right: 10px;">
+                        <h4 class='bx bxs-bell' style='color:#ffffff;'></h4>
+                    </li>
+                    <li class="list-group"> <img
+                            src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png"
+                            alt="user" width="50px"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends Here -->
+    <div class="container-fluid  px-4 pt-3">
+        <h1 style="color: #ffffff;font-size: 30px;">Step 2 : Set Targets</h1>
+        <div class="row">
+            <div class="col col-lg-12 text-white pt-4">
+                <p style="text-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing adipisicing elit.
+                    Nihil natus commodi assumenda quas aliquam, repudiandae beatae ipsum, magni maxime numquam accusamus
+                    possimus vel similique doloribus. Reprehenderit quo consectetur harum cum.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Nihil natus commodi assumenda quas aliquam, repudiandae beatae ipsum,
+                    magni maxime numquam accusamus Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus
+                    commodi assumenda quas aliquam, repudiandae beatae ipsum, magni maxime numquam accusamus possimus
+                    vel .</p>
+
+                <p class="pt-3" style="text-align:justify;">similique doloribus. Reprehenderit quo consectetur harum
+                    cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus commodi assumenda quas
+                    aliquam, repudiandae beatae ipsum, magni maxime numquam accusamus Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Nihil natus commodi assumenda quas aliquam, repudiandae beatae ipsum,
+                    magni maxime numquam accusamus possimus vel .</p>
+                <hr style="color: #00ff1e;padding-bottom: 2px;">
+
+            </div>
+            <div class="row pb-5">
+                <div class="col col-lg-4" style="border-color:#08ff31;border-style: solid;">
+
+
+                    <h1 class="pt-3 pb-3" style="color: #ffffff;font-size: 30px;">Launch A Bug Bounty Program</h1>
+                    <div class="progress " style="border-radius: 50px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="11"
+                            aria-valuemin="0" aria-valuemax="100">11% Completed</div>
+                    </div>
+                    <hr style="color: #00ff1e;padding-bottom: 2px;">
+                    <ol class="pt-3 pb-4" style="color: white;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                1.Program Name
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                2.Set Targets
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                3.Participation Guideliness
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                4.Reward Range
+
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                5.Identify Vulnerability Concerns
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                6.Select your crowd
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                7.Add Look and Feel
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                8.Schedule Launch
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checked" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                9.Review and Submit
+                            </label>
+                        </div>
+
+                    </ol>
+                    <hr style="color: #00ff1e;padding-bottom: 2px;">
+                    <center>
+                        <div class="pt-1 pb-3">
+
+                            <a href="" style="color: #00ff1e;font-size: 30px;text-decoration: none;">Save and Complete
+                                Later</a>
+                        </div>
+                    </center>
+
+
+                </div>
+                <div class="col col-lg-8">
+                    <div class="container pt-4 pb-5"
+                        style="align-items: center;border-color:#08ff31;border-style: solid;">
+                        <center>
+
+                            <h1 style="color: #ffffff;font-size: 30px;">Add Targets to Test</h1>
+                        </center>
+
+                        <p class="pt-3 pb-4" style="text-align:justify;color: white;text-align: center;">Targets you add
+                            will appear here.You
+                            can add as many Targets as you like and edit them here as necessary</p>
+                        <center>
+                            <a type="button" id="addbutton" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Add Target
+                            </a>
+                            <!-- <a href="" id="addbutton">Add Targesfdfts</a> -->
+                        </center>
+
+                    </div>
+
+
+
+                    <div class="pt-5"></div>
+
+                    <hr style="color: #00ff1e;padding-bottom: 2px;">
+                    <div class="pb-5"></div>
+                    <a href="./step1.html"
+                        style="background-color: #000000;text-decoration: none; color: rgb(255, 255, 255);font-weight: bold;float: left;font-size: 22px;">Previous
+                        Step</a>
+                    <a class="btn btn-primary btn-lg" href="./step2.2.html"
+                        style="background-color: #00ff1e;color: black;font-weight: bold;float: right;">Next Step</a>
+                </div>
+
+            </div>
+            <!-- need help -->
+            <div class="col col-lg-4" style="border-color:#08ff31;border-style: solid;">
+
+
+                <h1 class="pt-3 pb-3" style="color: #ffffff;font-size: 30px;">Need Help ?</h1>
+
+                <p style="color: white;">Our Support Team is available bby 9 Am to 5Pm,,Monday - Friday PST. Please send
+                    us an Email if you need Assistance!</p>
+                <h4 style="color: #0bb81f;">get.started@hackerji.com</h4>
+
+
+            </div>
+            <!-- need help end -->
+
+        </div>
+        <div class="pt-3 pb-5">
+
+            <hr style="color: #00ff1e;padding-bottom: 2px;">
+            <p style="color: white;">Terms & Conditions</p>
+        </div>
+    </div>
+
+
+    <!-- add target model -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style=" background-color: black;border-color:#08ff31;border-style: solid;">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Add a
+                        Target</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style=" background-color: black;border-color:#08ff31;border-style: solid;">
+
+                    <label style="color: white;" for="inputGroupSelect01">Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <label style="color: white;" for="inputGroupSelect01">Tags</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <label style="color: white;" for="inputGroupSelect01">URL/Location</label>
+                    <label style="color: white;" for="inputGroupSelect01">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Perspiciatis sed dolorem, animi voluptate libero minima molestias cumque quis
+                        amet reiciendis.</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+
+
+
+                    </div>
+                    <br>
+                    <label style="color: white;" for="inputGroupSelect01">Category</label>
+                    <label style="color: white;" for="inputGroupSelect01">Categorize the Target based on one of the
+                        options provided.</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="modal-footer" style=" background-color: black;border-color:#08ff31;border-style: solid;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #08ff31;color: black;font-weight: bold;">Add Target</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add target model end -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <!-- js end -->
+</body>
+
+</html>
