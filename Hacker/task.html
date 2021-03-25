@@ -2,238 +2,366 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HackerJi</title>
-  <link rel="shortcut icon" href="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacker-ji_Logo_symbole_30RbfYqov.svg"
-    type="image/x-icon" />
-  <!-- css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <!-- css end -->
-  <!-- Box icons -->
-  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-  <!-- Box icons end -->
-  <style>
-    body {
-      background-color: black;
-    }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackerJi</title>
+    <link rel="shortcut icon" href="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacker-ji_Logo_symbole_30RbfYqov.svg"
+        type="image/x-icon" />
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!-- css end -->
+    <!-- Box icons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-    .bg-success {
-      background-color: #0bb81f !important;
-    }
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <!-- Box icons end -->
+    <style>
+        body {
+            background-color: black;
+        }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #1ED760;
-    }
+        .bg-success {
+            background-color: #0bb81f !important;
+        }
 
-    p,
-    li {
-      color: #ffffff;
-    }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #1ED760;
+        }
 
-    a {
-      text-decoration: none;
-      color: #000000;
-    }
+        p,
+        li {
+            color: #ffffff;
+        }
 
-    .bgImage {
-      position: absolute;
-      right: 0;
-      background-image: url(./assets/img/Mask\ Group\ 3.svg);
-      width: 50vw;
-      height: 100vh;
-      z-index: -1;
-    }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
 
-    #nav {
-      color: white;
-    }
+        .bgImage {
+            position: absolute;
+            right: 0;
+            background-image: url(./assets/img/Mask\ Group\ 3.svg);
+            width: 50vw;
+            height: 100vh;
+            z-index: -1;
+        }
 
-    #nav:hover {
-      color: #1ED760;
-    }
-  </style>
+        #nav {
+            color: white;
+        }
+
+        #nav:hover {
+            color: #1ED760;
+        }
+
+        .btn-success {
+            background-color: #1ED760 !important;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Montserrat;
+
+        }
+
+        .btn-success:active {
+            color: #000;
+            opacity: .7;
+        }
+
+
+        .btn-success:hover {
+            color: #000;
+        }
+    </style>
 
 <body>
-  <!-- Navbar starts Here -->
-  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark  sticky-lg-top sticky-md-top sticky-sm-top"
-  style="background-color: #000000; padding: 20px;">
-  <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacher-ji_Logo_xdbfgPvxtM.svg" alt="image" width="200px">
-  <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 20px;font-weight: bold;">
-              <li class="nav-item">
-                  <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Tasks</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Welcome Center</a>
-              </li>
-          </ul>
-          <form class="d-flex">
-              <li style="list-style: none;" class="nav-item dropdown">
+    <!-- Navbar starts Here -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark  sticky-lg-top sticky-md-top sticky-sm-top"
+        style="background-color: #000000; padding: 20px;">
+        <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/Hacher-ji_Logo_xdbfgPvxtM.svg" alt="image" width="200px">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 20px;font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav" href="#" tabindex="-1" aria-disabled="true">Welcome Center</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <li style="list-style: none;" class="nav-item dropdown">
 
 
 
-                  <div class="form-group position-relative error-l-50">
+                        <div class="form-group position-relative error-l-50">
 
-                      <div class="input-group mb-3">
-                          <select class="form-control"
-                              style="color: #0bb81f;font-size: 20px;background-color:black;border-style: solid;border-color: #0bb81f;font-weight: bold;"
-                              name="user" id="exampleFormControlSelect1" required>
-                              <option selected="" disabled="" value="">Select User</option>
+                            <div class="input-group mb-3">
+                                <select class="form-control"
+                                    style="color: #0bb81f;font-size: 20px;background-color:black;border-style: solid;border-color: #0bb81f;font-weight: bold;"
+                                    name="user" id="exampleFormControlSelect1" required>
+                                    <option selected="" disabled="" value="">Select User</option>
 
-                              <option>one</option>
-                              <option>two</option>
+                                    <option>one</option>
+                                    <option>two</option>
 
-                          </select>
-                      </div>
-                  </div>
+                                </select>
+                            </div>
+                        </div>
 
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-              </li>
-          </form>
-      </div>
-  </div>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="d-none d-md-block">
-      <ul class="list-group list-group-horizontal">
-          <li class="list-group" style="padding-top: 10px;padding-right: 10px;">
-              <h4 class='bx bxs-bell' style='color:#ffffff;'></h4>
-          </li>
-          <li class="list-group">
-              <!-- <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png" alt="user"
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </form>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-none d-md-block">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group" style="padding-top: 10px;padding-right: 10px;">
+                    <h4 class='bx bxs-bell' style='color:#ffffff;'></h4>
+                </li>
+                <li class="list-group">
+                    <!-- <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png" alt="user"
                   width="50px"> -->
-              <div class="dropdown">
-                  <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png"
-                          alt="user" width="50px">
-                  </a>
+                    <div class="dropdown">
+                        <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://ik.imagekit.io/bfzb9z4tav/HackerJi/103160_man_512x512_q_3Ez9MguH.png"
+                                alt="user" width="50px">
+                        </a>
 
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="left: -125px;">
-                      <li><a class="dropdown-item" href="#">Nutz - 090607</a></li>
-                      <li><a class="dropdown-item" href="#">Setup your Account</a></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
-                  </ul>
-              </div>
-          </li>
-      </ul>
-  </div>
-  </div>
-</nav>
-<!-- Navbar ends Here -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col col-lg-10">
-        <h1 style="color: #1ED760;">Customer Tasks</h1>
-      </div>
-
-
-      <div class="col col-lg-2">
-        <div class="input-group mb-3" style="float: right;">
-          <select class="form-control"
-            style="color: #0bb81f;font-size: 20px;background-color:black;border-style: solid;border-color: #0bb81f;font-weight: bold;"
-            name="user" id="exampleFormControlSelect1" required>
-            <option selected="" disabled="" value="">All Programs</option>
-
-            <option>one</option>
-            <option>two</option>
-
-          </select>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="left: -125px;">
+                            <li><a class="dropdown-item" href="#">Nutz - 090607</a></li>
+                            <li><a class="dropdown-item" href="#">Setup your Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-    <div class="row m-5 p-5">
-      <div class="col col-lg-12" style="background-color: #ffffff;">
-        <div class="row m-5 p-5" style="text-align: center;">
-          <h3 style="color: black;">Hurray, Your Task list is empty</h3>
-          <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia quasi
-            dignissimos nihil accusantium cum accusamus, modi sit ad ab perferendis, voluptate corrupti non consequatur
-            dolores. Quia sequi deserunt voluptatibus!</p>
-
         </div>
+    </nav>
+    <!-- Navbar ends Here -->
 
-
-      </div>
-
-
-    </div>
-    <hr style="color: white;">
     <div class="container">
-      <div class="row">
-        <div class="col col-lg-8">
-          <ul style="list-style-type: none;">
-            <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Terms
-                &
-                Conditions</a>
-            </li>
-            <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Privacy-Policy</a>
-            </li>
-            <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Hackerji
-                Security</a>
-            </li>
-            <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Do not
-                Sell
-                my
-                Information</a>
-            </li>
-          </ul>
+        <div class="row">
+            <div class="col col-lg-10">
+                <h1 style="color: #1ED760;">Customer Tasks</h1>
+            </div>
+
+
+            <div class="col col-lg-2">
+                <div class="input-group mb-3" style="float: right;">
+                    <select class="form-control"
+                        style="color: #0bb81f;font-size: 20px;background-color:black;border-style: solid;border-color: #0bb81f;font-weight: bold;"
+                        name="user" id="exampleFormControlSelect1" required>
+                        <option selected="" disabled="" value="">All Programs</option>
+
+                        <option>one</option>
+                        <option>two</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div
+                style="position: relative; top:70px;font-weight:bolder; font-family: montserrat; z-index: 1;width: 60%; left: 10%;color:#fff;">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-success active " id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-success" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-success" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Contact</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-success" id="pills-support-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-support" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Support</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="col col-lg-12" style="background-color: #ffffff;">
+                        <div class="row m-5 p-5" style="text-align: center;">
+                            <h3 style="color: black;">Hurray, Your Task list is empty</h3>
+                            <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam,
+                                officia
+                                quasi
+                                dignissimos nihil accusantium cum accusamus, modi sit ad ab perferendis, voluptate
+                                corrupti non
+                                consequatur
+                                dolores. Quia sequi deserunt voluptatibus!</p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="col col-lg-12" style="background-color: #ffffff;">
+                            <div class="row m-5 p-5" style="text-align: center;">
+                                <h3 style="color: black;">sorry, Your Task list is empty</h3>
+                                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam,
+                                    officia
+                                    quasi
+                                    dignissimos nihil accusantium cum accusamus, modi sit ad ab perferendis, voluptate
+                                    corrupti non
+                                    consequatur
+                                    dolores. Quia sequi deserunt voluptatibus!</p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-support" role="tabpanel" aria-labelledby="pills-support-tab">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="col col-lg-12" style="background-color: #ffffff;">
+                            <div class="row m-5 p-5" style="text-align: center;">
+                                <h3 style="color: black;">hurray!, Your Task list finished</h3>
+                                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam,
+                                    officia
+                                    quasi
+                                    dignissimos nihil accusantium cum accusamus, modi sit ad ab perferendis, voluptate
+                                    corrupti non
+                                    consequatur
+                                    dolores. Quia sequi deserunt voluptatibus!</p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="col col-lg-12" style="background-color: #ffffff;">
+                            <div class="row m-5 p-5" style="text-align: center;">
+                                <h3 style="color: black;">ooh, Your Task list is empty</h3>
+                                <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam,
+                                    officia
+                                    quasi
+                                    dignissimos nihil accusantium cum accusamus, modi sit ad ab perferendis, voluptate
+                                    corrupti non
+                                    consequatur
+                                    dolores. Quia sequi deserunt voluptatibus!</p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col col-lg-4">
-          <ul style="list-style-type: none; margin-left: 1rem;">
-            <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;" href="">Docs</a>
-            </li>
-            <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;" href="">FAQ</a>
-            </li>
-            <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;" href="">Resources</a>
-            </li>
-            <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;" href="">Blog</a>
-            </li>
-            <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;" href="">Contact</a>
-            </li>
-          </ul>
+
+        <hr style="color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-8">
+                    <ul style="list-style-type: none;">
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Terms
+                                &
+                                Conditions</a>
+                        </li>
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;"
+                                href="">Privacy-Policy</a>
+                        </li>
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;"
+                                href="">Hackerji
+                                Security</a>
+                        </li>
+                        <li style="float: left;"><a style="color: #ffffff !important;padding-left: 15px;" href="">Do not
+                                Sell
+                                my
+                                Information</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-lg-4">
+                    <ul style="list-style-type: none; margin-left: 1rem;">
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Docs</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">FAQ</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Resources</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Blog</a>
+                        </li>
+                        <li style="float: right;"><a style="color: #ffffff !important; margin-right: 1rem;"
+                                href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5 pb-5">
+                <div class="col col-lg-12">
+                    <ul style="list-style-type: none; margin-left: 1rem;">
+                        <li style="text-align: center;"><a
+                                style="color: #ffffff !important; margin-right: 1rem;font-size: 12px;" href="">Copyright
+                                @ 2021 HaackerJi.All rights reserved.</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-      <div class="row pt-5 pb-5">
-        <div class="col col-lg-12">
-          <ul style="list-style-type: none; margin-left: 1rem;">
-            <li style="text-align: center;"><a style="color: #ffffff !important; margin-right: 1rem;font-size: 12px;"
-                href="">Copyright
-                @ 2021 HaackerJi.All rights reserved.</a>
-            </li>
 
-          </ul>
-        </div>
 
-      </div>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
